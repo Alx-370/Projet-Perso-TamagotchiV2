@@ -1,4 +1,4 @@
-# Projet Calculatrice Version 1.0
+# Projet Tamagotchi Version 2.0
 <img src= "imgTamagotchi.png" width="150"/>
 
 <p>Petit projet perso d'un Tamagotchi (non fini)</p>
