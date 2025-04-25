@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="jeu">
+        <h1>Mon Tamagotchi</h1>
+    
+        <div class="stats">
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_faim" class="remplissage">
+                        <span id="texte_faim">Faim</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_soif" class="remplissage">
+                        <span id="texte_soif">Soif</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_sommeil" class="remplissage">
+                        <span id="texte_sommeil">Sommeil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="tamagotchi">
+            <img id="image_tamagotchi" src="images/Gif/Happy.gif" alt="Tamagotchi heureux">
+        </div>
+      
+      <div class="stats">
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_bonheur" class="remplissage">
+                        <span id="texte_bonheur">Bonheur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_hygiene" class="remplissage">
+                        <span id="texte_hygiene">Hygiène</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="barre">
+                    <div id="barre_sante" class="remplissage">
+                        <span id="texte_sante">Santé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="message"></p>
+    
+        <div class="actions">
+            <button id="bouton_nourrir">🍎 Nourrir</button>
+            <button id="bouton_boire">🥤 Boire</button>
+            <button id="bouton_dormir">🌙 Dormir</button>
+            <button id="bouton_jouer">🎾 Jouer</button>
+            <button id="bouton_laver">🛁 Laver</button>
+            <button id="bouton_soigner">💊 Soigner</button>
+            <button id="bouton_redemarrer">🔄 Redémarrer</button>
+        </div>
+    
+    </div>
+    
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

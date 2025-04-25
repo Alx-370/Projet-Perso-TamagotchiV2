@@ -1,0 +1,189 @@
+/* Ajouter ces styles au body pour centrer tout le contenu */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    margin: 0; /* Enlever les marges par défaut */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+
+.jeu {
+    width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.stats {
+    display: flex; /* Permet d'afficher les éléments horizontalement */
+    justify-content: space-between; /* Plus serré pour moins d'espace entre les barres */
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat {
+    width: 30%;  /* Donne à chaque barre 30% de largeur pour qu'elles tiennent côte à côte */
+    margin: 0 5px;  /* Espacement entre les barres */
+}
+
+.barre {
+    width: 100%;
+    height: 35px;  /* Augmenter la hauteur de la barre pour plus de visibilité */
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.remplissage {
+    height: 100%;
+    width: 100%;
+    background: green;
+    transition: width 0.5s, background-color 0.5s;
+    border-radius: 10px;
+}
+
+.remplissage span {
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.tamagotchi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamagotchi img {
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.actions button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: SteelBlue;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    gap: 10px; /* Espacement entre les boutons */
+    max-width: 500px; /* Ajuste la largeur max si nécessaire */
+    margin: auto; /* Centre le bloc de boutons */
+}
+
+#bouton_redemarrer {
+    display: none;  /* Masque le bouton par défaut */
+}
+
+#bouton_redemarrer {
+    background: SaddleBrown;
+    grid-column: span 3; /* Étend le bouton sur les 3 colonnes */
+    justify-self: center; /* Centre le bouton si besoin */
+    width: 100%; /* (Optionnel) Pour qu'il prenne toute la largeur */
+    
+    
+}
+
+#bouton_redemarrer:hover {
+    background: #e68900;
+}
+
+.actions button:hover {
+    background: #e68900;
+}
+
+#message {
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+
+/* Responsive Design */
+
+/* Pour tablette (écran max 768px) */
+@media screen and (max-width: 768px) {
+    .jeu {
+        width: 90%; /* Réduit la largeur de la carte */
+        padding: 15px;
+    }
+
+    .tamagotchi img {
+        width: 200px; /* Réduit l'image du Tamagotchi */
+    }
+
+    .stat {
+        width: 48%; /* Permet aux barres de se mettre à deux par ligne */
+    }
+
+    .actions {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes au lieu de 3 pour les tablettes */
+    }
+
+    #bouton_redemarrer {
+        grid-column: span 2; /* Prend toute la ligne */
+    }
+}
+
+/* Pour smartphone (écran max 480px) */
+@media screen and (max-width: 480px) {
+    .jeu {
+        width: 95%; /* Réduit la largeur */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Réduit la taille du titre */
+    }
+
+    .tamagotchi img {
+        width: 150px; /* Réduit encore l'image */
+    }
+
+    .stats {
+        flex-wrap: wrap; /* Les barres se mettent l'une sous l'autre */
+        justify-content: center; 
+    }
+
+    .stat {
+        width: 100%; /* Une barre par ligne */
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        grid-template-columns: 1fr; /* 1 bouton par ligne */
+    }
+
+    #bouton_redemarrer {
+        grid-column: span 1; /* Reprend toute la ligne */
+    }
+
+    #message {
+        font-size: 20px; /* Réduit la taille du message */
+    }
+}
+
