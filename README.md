@@ -1,7 +1,7 @@
 # Projet Calculatrice Version 1.0
-<img src= "imgSiteCV2.png" width="150"/>
+<img src= "imgTamagotchi.png" width="150"/>
 
-<p>Petit projet perso d'un Tamagotchi</p>
+<p>Petit projet perso d'un Tamagotchi (non fini)</p>
 
 <p>Ouvrir en premier le fichier index.html</p>
 
