@@ -1,7 +1,16 @@
 # Projet Tamagotchi Version 2.0
 <img src= "imgTamagotchi.png" width="150"/>
 
-<p>Petit projet perso d'un Tamagotchi (non fini)</p>
+<p>Mini Projet : Mon Tamagotchi Virtuel
+Bienvenue dans mon petit projet personnel ! J’ai commencé à développer une version simplifiée d’un Tamagotchi — ce petit animal virtuel qu’on aimait tant dans les années 90/2000. L’idée : créer un compagnon numérique avec lequel on peut interagir, le nourrir, jouer avec lui et veiller à son bien-être.
+
+Ce projet est encore en cours de développement, mais il intègre déjà quelques fonctionnalités de base comme :
+
+Suivi de l’humeur et de l’énergie,
+
+Actions disponibles : nourrir, jouer, dormir,
+
+Réactions dynamiques selon l’état du Tamagotchi.</p>
 
 <p>Ouvrir en premier le fichier index.html</p>
 
