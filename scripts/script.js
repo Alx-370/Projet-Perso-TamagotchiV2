@@ -67,7 +67,7 @@ function mettreAJourStats() {
     mettreAJourBarre(sommeil, barreSommeil, texteSommeil, "Sommeil");
     mettreAJourBarre(bonheur, barreBonheur, texteBonheur, "Bonheur");
     mettreAJourBarre(hygiene, barreHygiene, texteHygiene, "Hygiène");
-    mettreAJourBarre(sante, barreSante, texteSante, "Santé");
+    mettreAJourBarre(sante, barreSante, texteSante, "Sante");
 
   // Vérifier si le Tamagotchi est malheureux
     if (faim <= 20 || soif <= 20 || sommeil <= 20 || bonheur <= 20 || hygiene <= 20 || sante <= 20) {
