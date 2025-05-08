@@ -148,7 +148,7 @@ function soigner() {
     if (estMort) return;
     sante = Math.min(sante + 20, 100);
     mettreAJourStats();
-    imageTamagotchi.src = "images/Gif/Santé.gif"; //Gif santé
+    imageTamagotchi.src = "images/Gif/Sante.gif"; //Gif santé
     message.textContent = "Votre Tamagotchi se soigne"; //message se soigne
 }
 
