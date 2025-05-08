@@ -16,6 +16,9 @@ Bienvenue dans mon petit projet personnel ! J’ai commencé à développer une 
 
  Création de GIF en utilisant Pixel Brush.<br><br>
 
+ Envie d'essayer?
+https://alx-370.github.io/Projet-Perso-TamagotchiV2/<br><br>
+
 
 
 <p>Ouvrir en premier le fichier index.html</p>
